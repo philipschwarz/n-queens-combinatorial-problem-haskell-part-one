@@ -28,11 +28,6 @@ zipWithRows queens = zip rowNumbers queens
 main :: IO ()
 main = putStrLn ("N-Queens 8 result: " ++ (show (queens 8)))
 
--- https://wiki.haskell.org/HUnit_1.0_User's_Guide
--- To run the tests:
--- 1. stack repl
--- 2. runtTestsTT tests
-
 test1 = TestCase (assertEqual "N-Queens 4" (queens 4) [[3, 1, 4, 2], [2, 4, 1, 3]])
  
 test2 = TestCase (assertEqual "N-Queens 5" (queens 5) [[4, 2, 5, 3, 1], [3, 5, 2, 4, 1], [5, 3, 1, 4, 2],
