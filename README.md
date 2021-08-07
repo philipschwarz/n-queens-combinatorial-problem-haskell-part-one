@@ -5,4 +5,4 @@ Running the program:
 
 Running the tests:
 * stack repl
-* runtTestsTT tests
+* runTestTT tests
